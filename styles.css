@@ -1,0 +1,12 @@
+.quadradinho{
+    height: 20px;
+    width: 20px;
+    background-color: black;
+    color: white;
+    text-decoration: solid;
+    text-align: center;
+}
+
+.quadradinho:hover{
+background-color: gray;
+}

@@ -1,7 +1,7 @@
 let termo = [];
 termo[0] = 'T';
 termo[1] = 'E';
-termo[3] = 'R';
+termo[2] = 'R';
 termo[3] = 'M';
 termo[4] = 'O';
 
@@ -15,13 +15,16 @@ palpite[4] = document.getElementById("letra15");
 
 function verifica(){
 
-    if (termo[0] == palpite[0].value){
-        console.log("verde");
-    }else{
-        console.log("vermelho");
-        console.log(termo[0]);
-        console.log(palpite[0].value);
+    for (let i = 0; i < 5; i++) {
+        for (let j = 0; j < 5; j++) {
+            if(termo[i]==palpite[j].value){
+                if(i==j){
+                    console.log("verde");
+                }else{console.log("amarelo")}
+            }else{console.log("preto")
+                                       
+        }
+        }
     }
-
 
 }

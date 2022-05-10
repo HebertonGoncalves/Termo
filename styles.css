@@ -1,12 +1,32 @@
 .quadradinho{
-    height: 20px;
-    width: 20px;
+    height: 80px;
+    width: 80px;
     background-color: black;
     color: white;
     text-decoration: solid;
     text-align: center;
+    padding: 10px;
+}
+
+.gabarito{
+    height: 80px;
+    width: 80px;
+    background-color: black;
+    color: rgb(227, 255, 65);
+    text-decoration: solid;
+    text-align: center;
+    padding: 10px;
+    border: 2px;
 }
 
 .quadradinho:hover{
 background-color: gray;
+}
+
+.linha{
+    display: flex;
+}
+.linha_gabarito{
+    display: flex;
+
 }

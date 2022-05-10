@@ -19,8 +19,48 @@ function verifica(){
         for (let j = 0; j < 5; j++) {
             if(termo[i]==palpite[j].value){
                 if(i==j){
-                    console.log("verde");
-                }else{console.log("amarelo")}
+                    switch(i){
+                        case 0:
+                            document.getElementById("letra21").style.backgroundColor = "green";
+                            //innerHTML
+                        break;
+                        case 1:
+                            document.getElementById("letra22").style.backgroundColor = "green";
+                        break;
+                        case 2:
+                            document.getElementById("letra23").style.backgroundColor = "green";
+                        break;
+                        case 3:
+                            document.getElementById("letra24").style.backgroundColor = "green";
+                        break;
+                        case 4:
+                            document.getElementById("letra25").style.backgroundColor = "green";
+                        break;
+                        default:
+                            console.log("erro")
+                    }
+                }else{
+                    
+                    switch(j){
+                        case 0:
+                            document.getElementById("letra21").style.backgroundColor = "yellow";
+                        break;
+                        case 1:
+                            document.getElementById("letra22").style.backgroundColor = "yellow";
+                        break;
+                        case 2:
+                            document.getElementById("letra23").style.backgroundColor = "yellow";
+                        break;
+                        case 3:
+                            document.getElementById("letra24").style.backgroundColor = "yellow";
+                        break;
+                        case 4:
+                            document.getElementById("letra25").style.backgroundColor = "yellow";
+                        break;
+                        default:
+                            console.log("erro")
+                    }
+                }
             }else{console.log("preto")
                                        
         }

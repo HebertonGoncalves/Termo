@@ -1,8 +1,8 @@
 let termo = [];
-termo[0] = 'T';
-termo[1] = 'E';
+termo[0] = 'P';
+termo[1] = 'A';
 termo[2] = 'R';
-termo[3] = 'M';
+termo[3] = 'I';
 termo[4] = 'O';
 
 let palpite = []

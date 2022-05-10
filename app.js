@@ -15,26 +15,42 @@ palpite[4] = document.getElementById("letra15");
 
 function verifica(){
 
+    document.getElementById("gab21").style.backgroundColor = "black";
+    document.getElementById("letra21").innerHTML = "";
+    document.getElementById("gab22").style.backgroundColor = "black";
+    document.getElementById("letra22").innerHTML = "";
+    document.getElementById("gab23").style.backgroundColor = "black";
+    document.getElementById("letra23").innerHTML = "";
+    document.getElementById("gab24").style.backgroundColor = "black";
+    document.getElementById("letra24").innerHTML = "";
+    document.getElementById("gab25").style.backgroundColor = "black";
+    document.getElementById("letra25").innerHTML = "";
+
+
     for (let i = 0; i < 5; i++) {
         for (let j = 0; j < 5; j++) {
             if(termo[i]==palpite[j].value){
                 if(i==j){
                     switch(i){
                         case 0:
-                            document.getElementById("letra21").style.backgroundColor = "green";
-                            //innerHTML
+                            document.getElementById("gab21").style.backgroundColor = "green";
+                            document.getElementById("letra21").innerHTML = palpite[j].value;
                         break;
                         case 1:
-                            document.getElementById("letra22").style.backgroundColor = "green";
+                            document.getElementById("gab22").style.backgroundColor = "green";
+                            document.getElementById("letra22").innerHTML = palpite[j].value;
                         break;
                         case 2:
-                            document.getElementById("letra23").style.backgroundColor = "green";
+                            document.getElementById("gab23").style.backgroundColor = "green";
+                            document.getElementById("letra23").innerHTML = palpite[j].value;
                         break;
                         case 3:
-                            document.getElementById("letra24").style.backgroundColor = "green";
+                            document.getElementById("gab24").style.backgroundColor = "green";
+                            document.getElementById("letra24").innerHTML = palpite[j].value;
                         break;
                         case 4:
-                            document.getElementById("letra25").style.backgroundColor = "green";
+                            document.getElementById("gab25").style.backgroundColor = "green";
+                            document.getElementById("letra25").innerHTML = palpite[j].value;
                         break;
                         default:
                             console.log("erro")
@@ -43,19 +59,19 @@ function verifica(){
                     
                     switch(j){
                         case 0:
-                            document.getElementById("letra21").style.backgroundColor = "yellow";
+                            document.getElementById("gab21").style.backgroundColor = "yellow";
                         break;
                         case 1:
-                            document.getElementById("letra22").style.backgroundColor = "yellow";
+                            document.getElementById("gab22").style.backgroundColor = "yellow";
                         break;
                         case 2:
-                            document.getElementById("letra23").style.backgroundColor = "yellow";
+                            document.getElementById("gab23").style.backgroundColor = "yellow";
                         break;
                         case 3:
-                            document.getElementById("letra24").style.backgroundColor = "yellow";
+                            document.getElementById("gab24").style.backgroundColor = "yellow";
                         break;
                         case 4:
-                            document.getElementById("letra25").style.backgroundColor = "yellow";
+                            document.getElementById("gab25").style.backgroundColor = "yellow";
                         break;
                         default:
                             console.log("erro")

@@ -1123,7 +1123,7 @@ function verifica(){
     }
 
 }
-    else{}
+    else{document.getElementById("resposta").innerHTML = "Meteu essa mané ?!"}
 }
 
 document.getElementById("letra11").value = "";

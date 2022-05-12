@@ -1,6 +1,6 @@
 export default class dicio{
     constructor(fila) {
-    this.fila = [
+        this.fila = [
 'SAGAZ',
 'AMAGO',
 'NEGRO',

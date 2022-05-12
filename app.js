@@ -5,6 +5,7 @@ let fila = new dicio();
 let rand = Math.floor(Math.random() * 1000);
 
 let termo = fila.fila[rand].split('');
+
 console.log(termo[0]);
 console.log(termo[1]);
 console.log(termo[2]);

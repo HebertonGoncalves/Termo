@@ -1244,7 +1244,7 @@ let fila = ['SAGAZ',
 'VEDAR', 
 'URDIR', ]
 
-let rand = Math.floor(Math.random() * 1000);
+let rand = Math.floor(Math.random() * 1245);
 
 let termo = fila[rand].split('');
 

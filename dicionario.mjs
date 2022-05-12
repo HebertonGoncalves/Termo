@@ -1,4 +1,7 @@
-const fila = ['SAGAZ',
+export default class dicio{
+    constructor(fila) {
+    this.fila = [
+'SAGAZ',
 'AMAGO',
 'NEGRO',
 'EXITO',
@@ -997,139 +1000,253 @@ const fila = ['SAGAZ',
 'MERDA',
 'REDEA',
 'ARDUA', 
-];
-
-let rand = Math.floor(Math.random() * 1000);
-
-let termo = fila[rand].split('');
-console.log(termo[0]);
-console.log(termo[1]);
-console.log(termo[2]);
-console.log(termo[3]);
-console.log(termo[4]);
-
-let concat = []
-
-let palpite = []
-
-palpite[0] = document.getElementById("letra11");
-palpite[1] = document.getElementById("letra12");
-palpite[2] = document.getElementById("letra13");
-palpite[3] = document.getElementById("letra14");
-palpite[4] = document.getElementById("letra15");
-
-function verifica(){
-
-    document.getElementById("letra31").innerHTML = palpite[0].value;
-    document.getElementById("letra32").innerHTML = palpite[1].value;
-    document.getElementById("letra33").innerHTML = palpite[2].value;
-    document.getElementById("letra34").innerHTML = palpite[3].value;
-    document.getElementById("letra35").innerHTML = palpite[4].value;
-
-    
-    let j,i,k,l;
-
-    for(l = 0; l<5; l++){
-        concat[l] = palpite[l].value;
-    }
-
-    concatenado = concat.join('');
-    maiusculaconcat = concatenado.toUpperCase();
-
-    document.getElementById("gab21").style.backgroundColor = "black";
-    document.getElementById("letra21").innerHTML = "";
-    document.getElementById("gab22").style.backgroundColor = "black";
-    document.getElementById("letra22").innerHTML = "";
-    document.getElementById("gab23").style.backgroundColor = "black";
-    document.getElementById("letra23").innerHTML = "";
-    document.getElementById("gab24").style.backgroundColor = "black";
-    document.getElementById("letra24").innerHTML = "";
-    document.getElementById("gab25").style.backgroundColor = "black";
-    document.getElementById("letra25").innerHTML = "";
-
-    
-
-    console.log(concatenado);
-    for(k=0; k<999; k++){
-        if(maiusculaconcat==fila[k]){
-
-    for (i = 0; i < 5; i++) {
-        for (j = 0; j < 5; j++) {
-            if(termo[i]==palpite[j].value.toUpperCase()){
-                if(i==j){
-                    switch(i){
-                        case 0:
-                            document.getElementById("gab21").style.backgroundColor = "green";
-                            document.getElementById("letra21").innerHTML = palpite[j].value;
-                        break;
-                        case 1:
-                            document.getElementById("gab22").style.backgroundColor = "green";
-                            document.getElementById("letra22").innerHTML = palpite[j].value;
-                        break;
-                        case 2:
-                            document.getElementById("gab23").style.backgroundColor = "green";
-                            document.getElementById("letra23").innerHTML = palpite[j].value;
-                        break;
-                        case 3:
-                            document.getElementById("gab24").style.backgroundColor = "green";
-                            document.getElementById("letra24").innerHTML = palpite[j].value;
-                        break;
-                        case 4:
-                            document.getElementById("gab25").style.backgroundColor = "green";
-                            document.getElementById("letra25").innerHTML = palpite[j].value;
-                        break;
-                        default:
-                            console.log("erro")
-                    }
-                }else{
-                    
-                    switch(j){
-                        case 0:
-                            if(document.getElementById("gab21").style.backgroundColor == "green"){
-
-                            }else{
-                            document.getElementById("gab21").style.backgroundColor = "yellow";}
-                        break;
-                        case 1:
-                            if(document.getElementById("gab22").style.backgroundColor == "green"){
-
-                            }else{
-                            document.getElementById("gab22").style.backgroundColor = "yellow";}
-                        break;
-                        case 2:
-                            if(document.getElementById("gab23").style.backgroundColor == "green"){
-
-                            }else{
-                            document.getElementById("gab23").style.backgroundColor = "yellow";}
-                        break;
-                        case 3:
-                            if(document.getElementById("gab24").style.backgroundColor == "green"){
-
-                            }else{
-                            document.getElementById("gab24").style.backgroundColor = "yellow";}
-                        break;
-                        case 4:
-                            if(document.getElementById("gab25").style.backgroundColor == "green"){
-
-                            }else{
-                            document.getElementById("gab25").style.backgroundColor = "yellow";}
-                        break;
-                        default:
-                            console.log("erro")
-                    }
-                }
-            }else{}
+'ALIAR', 
+'GUIAR', 
+'MATAR', 
+'ESTAR', 
+'ATEAR', 
+'FREAR', 
+'ODIAR', 
+'SECAR', 
+'TOCAR', 
+'PECAR', 
+'CAÇAR', 
+'ROÇAR', 
+'VAGAR', 
+'CEGAR', 
+'PEGAR', 
+'JOGAR', 
+'LIGAR', 
+'PAGAR', 
+'AGUAR', 
+'DEVER', 
+'VIVER', 
+'MOVER', 
+'JAZER', 
+'DEPOR', 
+'SUPOR', 
+'RETER', 
+'DETER', 
+'OBTER', 
+'HAVER', 
+'REVER', 
+'CABER', 
+'RELER', 
+'DIZER', 
+'FAZER', 
+'PODER', 
+'SABER', 
+'VALER', 
+'FEDER', 
+'ABRIR', 
+'FERIR', 
+'GERIR', 
+'MUGIR', 
+'RUGIR', 
+'URGIR', 
+'SUBIR', 
+'SUMIR', 
+'BULIR', 
+'FUGIR', 
+'PEDIR', 
+'MEDIR', 
+'OUVIR', 
+'ADVIR', 
+'DEVIR', 
+'OBVIR', 
+'REVIR', 
+'LUZIR', 
+'TRAIR', 
+'BANIR', 
+'BALIR', 
+'DELIR', 
+'GANIR', 
+'LATIR', 
+'MUNIR', 
+'TINIR', 
+'UNGIR', 
+'FALIR', 
+'REMIR', 
+'POLIR', 
+'VAGIR', 
+'ZELAR', 
+'LEVAR', 
+'VELAR', 
+'BOTAR', 
+'BEBER', 
+'COZER', 
+'COSER', 
+'ADIAR', 
+'ANDAR', 
+'ARMAR', 
+'ASSAR', 
+'BATER', 
+'BOLAR', 
+'CALAR', 
+'CASAR', 
+'CATAR', 
+'CAVAR', 
+'CEDER', 
+'COLAR', 
+'COMER', 
+'CORAR', 
+'COTAR', 
+'COÇAR', 
+'CURAR', 
+'DOMAR', 
+'ECOAR', 
+'ERRAR', 
+'FALAR', 
+'FUMAR', 
+'FURAR', 
+'GELAR', 
+'GERAR', 
+'GIRAR', 
+'GOZAR', 
+'LAVAR', 
+'LESAR', 
+'LIMAR', 
+'LIXAR', 
+'LUTAR', 
+'MAMAR', 
+'METER', 
+'MIMAR', 
+'MIRAR', 
+'MORAR', 
+'NADAR', 
+'OLHAR', 
+'PARAR', 
+'PISAR', 
+'PODAR', 
+'PULAR', 
+'PUNIR', 
+'PUXAR', 
+'REGAR', 
+'REMAR', 
+'REPOR', 
+'REZAR', 
+'RIMAR', 
+'ROLAR', 
+'RUMAR', 
+'SANAR', 
+'SARAR', 
+'SOLAR', 
+'SOMAR', 
+'SUJAR', 
+'TAPAR', 
+'TOMAR', 
+'VARAR', 
+'ZERAR', 
+'ACHAR', 
+'ACUAR', 
+'ALÇAR', 
+'APEAR', 
+'ARCAR', 
+'ARDER', 
+'ARFAR', 
+'ATUAR', 
+'AVIAR', 
+'BABAR', 
+'BICAR', 
+'BOIAR', 
+'BUFAR', 
+'CAGAR', 
+'CAIAR', 
+'CAPAR', 
+'CHIAR', 
+'CITAR', 
+'DANAR', 
+'DITAR', 
+'DOPAR', 
+'DOSAR', 
+'DOTAR', 
+'DURAR', 
+'EXPOR', 
+'FICAR', 
+'FITAR', 
+'FIXAR', 
+'FOCAR', 
+'FUÇAR', 
+'GABAR', 
+'GEMER', 
+'GORAR', 
+'ILHAR', 
+'IMPOR', 
+'JURAR', 
+'LAÇAR', 
+'LEGAR', 
+'LOCAR', 
+'LOTAR', 
+'MELAR', 
+'MEXER', 
+'MINAR', 
+'MOFAR', 
+'MURAR', 
+'NANAR', 
+'NEGAR', 
+'NEVAR', 
+'NINAR', 
+'NOTAR', 
+'OPTAR', 
+'ORÇAR', 
+'ORLAR', 
+'OUSAR', 
+'PAPAR', 
+'PENAR', 
+'PESAR', 
+'PICAR', 
+'PIFAR', 
+'POSAR', 
+'RAIAR', 
+'RAJAR', 
+'RALAR', 
+'RAPAR', 
+'REGER', 
+'RIFAR', 
+'ROGAR', 
+'RUFAR', 
+'SACAR', 
+'SAFAR', 
+'SELAR', 
+'SOCAR', 
+'SUGAR', 
+'TACAR', 
+'TAXAR', 
+'TECER', 
+'TEMER', 
+'TOPAR', 
+'UIVAR', 
+'UNTAR', 
+'URRAR', 
+'VAIAR', 
+'VAZAR', 
+'VETAR', 
+'VEXAR', 
+'VISAR', 
+'VOTAR', 
+'DATAR', 
+'FILAR', 
+'LIDAR', 
+'MUDAR', 
+'RODAR', 
+'TIRAR', 
+'VIRAR', 
+'AFIAR', 
+'ANUIR', 
+'FLUIR', 
+'FRUIR', 
+'ORNAR', 
+'PARIR', 
+'PELAR', 
+'SOVAR', 
+'TOSAR', 
+'ZUNIR', 
+'MIJAR', 
+'CRIAR', 
+'RUGAR', 
+'VEDAR', 
+'URDIR', 
+    ];
         }
-    }
-
-}
-    else{document.getElementById("resposta").innerHTML = "Meteu essa mané ?!"}
-}
-
-document.getElementById("letra11").value = "";
-document.getElementById("letra12").value = "";
-document.getElementById("letra13").value = "";
-document.getElementById("letra14").value = "";
-document.getElementById("letra15").value = "";
-
+    
 }
